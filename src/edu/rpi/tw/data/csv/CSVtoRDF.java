@@ -57,20 +57,20 @@ import org.openrdf.repository.sail.SailRepository;
 import org.openrdf.rio.RDFHandlerException;
 import org.openrdf.sail.memory.MemoryStore;
 
-import edu.rpi.tw.data.csv.impl.CSVRecordTemplateFiller;
-import edu.rpi.tw.data.csv.impl.DefaultEnhancementParameters;
-import edu.rpi.tw.data.csv.impl.PropertyNameFactory;
-import edu.rpi.tw.data.csv.impl.TemplateFillerColumnContext;
-import edu.rpi.tw.data.csv.impl.ValueHandlerFactory;
-import edu.rpi.tw.data.csv.querylets.ParametersImportQuerylet;
-import edu.rpi.tw.data.csv.querylets.column.ColumnEnhancementQuerylet;
-import edu.rpi.tw.data.csv.querylets.deprecation.OldNamespaceQuerylet;
-import edu.rpi.tw.data.csv.valuehandlers.DateTimeValueHandler;
-import edu.rpi.tw.data.csv.valuehandlers.EnhancedLiteralValueHandler;
-import edu.rpi.tw.data.csv.valuehandlers.ResourceValueHandler;
+import edu.rpi.tw.data.csv.impl.CSVRecordTemplateFiller; // checked
+import edu.rpi.tw.data.csv.impl.DefaultEnhancementParameters; // checked
+import edu.rpi.tw.data.csv.impl.PropertyNameFactory; // checked
+import edu.rpi.tw.data.csv.impl.TemplateFillerColumnContext; // checked
+import edu.rpi.tw.data.csv.impl.ValueHandlerFactory; // checked
+import edu.rpi.tw.data.csv.querylets.ParametersImportQuerylet; // checked
+import edu.rpi.tw.data.csv.querylets.column.ColumnEnhancementQuerylet; // checked
+import edu.rpi.tw.data.csv.querylets.deprecation.OldNamespaceQuerylet; // checked
+import edu.rpi.tw.data.csv.valuehandlers.DateTimeValueHandler; // checked
+import edu.rpi.tw.data.csv.valuehandlers.EnhancedLiteralValueHandler; // checked
+import edu.rpi.tw.data.csv.valuehandlers.ResourceValueHandler; // checked
 import edu.rpi.tw.data.digest.GraphDigest;
-import edu.rpi.tw.data.rdf.sesame.query.QueryletProcessor;
-import edu.rpi.tw.data.rdf.sesame.vocabulary.CoIN;
+import edu.rpi.tw.data.rdf.sesame.query.QueryletProcessor; // checked
+import edu.rpi.tw.data.rdf.sesame.vocabulary.CoIN;// checked
 import edu.rpi.tw.data.rdf.sesame.vocabulary.DCTerms;
 import edu.rpi.tw.data.rdf.sesame.vocabulary.DOAP;
 import edu.rpi.tw.data.rdf.sesame.vocabulary.DataCube;
@@ -88,17 +88,17 @@ import edu.rpi.tw.data.rdf.sesame.vocabulary.SWAP_PIM_CON;
 import edu.rpi.tw.data.rdf.sesame.vocabulary.VANN;
 import edu.rpi.tw.data.rdf.sesame.vocabulary.VoID;
 import edu.rpi.tw.data.rdf.sesame.vocabulary.W3CFormats;
-import edu.rpi.tw.data.rdf.utils.pipes.Constants;
-import edu.rpi.tw.data.rdf.utils.pipes.starts.Cat;
-import edu.rpi.tw.data.sdv.SDVOrganization;
-import edu.rpi.tw.data.utils.SetUtilities;
-import edu.rpi.tw.string.BaseNamespace;
-import edu.rpi.tw.string.NameFactory;
+import edu.rpi.tw.data.rdf.utils.pipes.Constants;// checked
+import edu.rpi.tw.data.rdf.utils.pipes.starts.Cat;// checked
+import edu.rpi.tw.data.sdv.SDVOrganization;// checked
+import edu.rpi.tw.data.utils.SetUtilities;// checked
+import edu.rpi.tw.string.BaseNamespace;// checked
+import edu.rpi.tw.string.NameFactory; // checked
 import edu.rpi.tw.string.NameFactory.NameType;
-import edu.rpi.tw.string.WikimediaURIMapper;
-import edu.rpi.tw.string.pmm.DefaultPrefixMappings;
-import edu.rpi.tw.string.pmm.IPrefixMappings;
-import edu.rpi.tw.string.pmm.PrefixMappings;
+import edu.rpi.tw.string.WikimediaURIMapper;// checked
+import edu.rpi.tw.string.pmm.DefaultPrefixMappings;// checked
+import edu.rpi.tw.string.pmm.IPrefixMappings;// checked
+import edu.rpi.tw.string.pmm.PrefixMappings;// checked
 
 /**
  * CSVtoRDF converts a file in the generic comma-separated-value (CSV) format to a file in the 
