@@ -1,5 +1,6 @@
 /*
-#3> <> prov:specializationOf <https://github.com/timrdf/csv2rdf4lod/blob/master/build.gradle>;
+#3> <> a prov:Plan;
+#3>    prov:specializationOf <https://github.com/timrdf/csv2rdf4lod/blob/master/build.gradle>;
 #3>    prov:wasDerivedFrom   <https://docs.gradle.org/current/userguide/java_plugin.html>;
 #3> .
 #3>
