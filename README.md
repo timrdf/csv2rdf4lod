@@ -5,4 +5,4 @@ Convert tables to RDF using an [RDFS paradigm](https://github.com/timrdf/csv2rdf
 
 This is the Java source code for the plug-in of [csv2rdf4lod-automation](https://github.com/timrdf/csv2rdf4lod-automation/wiki).
 
-Read the documentation at https://github.com/timrdf/csv2rdf4lod/wiki
+Documentation at https://github.com/timrdf/csv2rdf4lod/wiki
